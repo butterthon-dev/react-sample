@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from './components/Hello';
+import Name from './components/Name';
+import Message from './components/Message';
+import Parent from './components/ContainerSample';
+import Page from './components/ContextSample';
+// import Counter from './components/UseStateCounterSample';
+import Counter from './components/UseReducerCounterSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +17,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <Hello />
+    <Name />
+    <Message />
+    <Parent />
+    <Page />
+    <Counter initialValue={0} />
   </React.StrictMode>
 );
 
