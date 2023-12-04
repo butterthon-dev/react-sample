@@ -6,24 +6,31 @@ import reportWebVitals from './reportWebVitals';
 import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
-import Parent from './components/ContainerSample';
+// import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
 // import Counter from './components/UseStateCounterSample';
 import Counter from './components/UseReducerCounterSample';
+// import { Parent } from './components/Parent';
+import { Parent } from './components/UseCallBackCounterSample';
+import { UseMemoSample } from './components/UseMemoSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     <App />
     <Hello />
     <Name />
     <Message />
-    <Parent />
+    {/* <Parent /> */}
     <Page />
     <Counter initialValue={0} />
-  </React.StrictMode>
+    <Parent />
+    <UseMemoSample />
+  </>
+  // </React.StrictMode>}
 );
 
 // If you want to start measuring performance in your app, pass a function
