@@ -11,8 +11,13 @@ import Page from './components/ContextSample';
 // import Counter from './components/UseStateCounterSample';
 import Counter from './components/UseReducerCounterSample';
 // import { Parent } from './components/Parent';
-import { Parent } from './components/UseCallBackCounterSample';
+// import { Parent } from './components/UseCallBackCounterSample';
 import { UseMemoSample } from './components/UseMemoSample';
+import { Clock } from './components/Clock';
+// import { Parent } from './components/UseContextSample';
+import { ImageUploader } from './components/UseRefSample';
+import { Parent } from './components/UseImperativeHandle';
+import { Input } from './components/UseDebugValueSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,8 +32,13 @@ root.render(
     {/* <Parent /> */}
     <Page />
     <Counter initialValue={0} />
-    <Parent />
+    {/* <Parent /> */}
     <UseMemoSample />
+    <Clock />
+    {/* <Parent /> */}
+    <ImageUploader />
+    <Parent />
+    <Input />
   </>
   // </React.StrictMode>}
 );
